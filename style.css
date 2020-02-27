@@ -1,0 +1,17 @@
+h2 span {
+    border: 8px dashed #20bcd5;
+    padding: 15px;
+}
+target,textarea,radio,submit,value{
+    cursor:pointer;
+}
+table,th,td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    
+}
+textarea{
+    width: 98px;
+    height: 180px;
+    text-align: center;
+}
