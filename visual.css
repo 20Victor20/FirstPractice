@@ -1,0 +1,21 @@
+.top {
+	display:flex;
+	border:5px solid orange;
+	justify-content:center;
+	background-image:url(https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-m-2000x1500_0.png);
+	font-size:30px;
+	color: white;
+	font-style: Helvetica;
+}
+.citate {
+	position:relative;
+        left:0px;
+        top: -100px;
+		z-index: 1;
+        width: 200px;  
+		justify-content:center;
+    	float: right;
+		font-style: italic;
+		color: white;
+		
+}
