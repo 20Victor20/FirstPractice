@@ -17,5 +17,15 @@
     	float: right;
 		font-style: italic;
 		color: white;
-		
+}
+.voting {
+	border:5px solid orange;
+	background-color:grey;
+	font-family:serif; 
+	display:inline-flex;
+	flex-direction:column;
+	max-width:150px;
+	}
+.voting1 {
+	border:3px solid orange;
 }
