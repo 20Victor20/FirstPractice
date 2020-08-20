@@ -5,7 +5,7 @@ body{
 		text-align: center;
 		background-image: linear-gradient(260deg, #9E9E9E 0%, #58266133 100%);
 		box-sizing: border-box;
-		margin: 0;
+		margin: 5px;
 }
 .header{
 		display: flex;
@@ -13,36 +13,72 @@ body{
 		height: 200px;
 		background:url(https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-m-2000x1500_0.png) center/cover;
 		font-style: italic;
-		font-size:2em;
 		color: white;
-		align-items:center;
-		justify-content:center;
-} 
-
+		border:2px solid goldenrod;		
+}
+.bar {
+		flex-grow:1;
+		color: white;
+		text-align:left;
+		max-height: 200px;
+		border:2px solid goldenrod;
+}
+.bar a {
+		margin:12px;
+		padding:16px;
+		word-spacing:5px;
+		font-size: 1em;
+		color: white;
+		text-decoration:none;
+		border:2px solid goldenrod;
+		line-height:2.5;
+}
+.bar p {
+		text-align: center;
+		font-size: 4em;	
+		font-style:italic;
+		letter-spacing:5px;
+		word-spacing:15px;
+		margin-top: 25px;
+		border:2px solid goldenrod;
+}
 .whole-universe{
 		flex: 1 0 auto;
 		display: flex;
+		border:2px solid goldenrod;
 }    
 .content{
-		flex: 1 0 auto;
-		
-}    
+		flex: 1 0 auto;	
+		border:2px solid goldenrod;
+}   
 .nav{
 		width: 150px;
 		list-style: none;
 		text-align: left;
 		order: -1;
 		background: yellow;
-		margin: 0;
+		margin-top: 5px;
 		padding:20px;
-
+		max-height:29em;
+		border:2px solid goldenrod;
+		
 }
-
+.nav li {
+		line-height: 2.5;
+}
+.nav h3 {
+		flex:1 1 100%;
+		text-align:center;
+		margin:3px;
+		padding:13px;
+		border:2px solid goldenrod;
+}
  @media (max-width: 700px) {
-    .whole-universe{
-       flex-direction: column;
+	.whole-universe{
+		flex-direction: column;
 }
 .nav{
         width: 100%;
+		border:2px solid goldenrod;
   }
 }
