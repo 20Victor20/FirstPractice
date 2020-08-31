@@ -55,11 +55,11 @@ body {
 		background: yellow;
 		margin-top: 5px;
 		padding:20px;
-		max-height:31em;
+		max-height:25em;
 		border:2px solid goldenrod;	
 }
-.voating section {
-		line-height: 2.5;
+.voating i {
+		line-height: 2.5;	
 }
 .voating h3 {
 		flex:1 1 100%;
