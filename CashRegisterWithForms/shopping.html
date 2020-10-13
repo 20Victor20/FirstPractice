@@ -5,30 +5,21 @@
 	</head>
 	<body>
 	
-	<h4>При покупці понад 1к грн вам буде надана скидка до 15%</h4>
-	<form name="price">
-		<input type="text" onchange="alert(this.value)">
-		<input type="button" value="Обрахувати ціну покупки">
+	<h4>При покупці на понад 1000 грн. вам буде надана скидка до 15%</h4>
+		<input type="text" name="price" placeholder="Введіть суму покупки">
 	
 	<h4>У разі придбання товара готівкою Ви матимете можливість скористатись безкоштовною доставкою на відстань до 30 км. Бажаєте скористатись даною послугою?</h4>
-	<form name="byDelivery">
+
 		<input type="radio" name="age" value="1">
 			<label for="radio">Так</label>
 		<input type="radio" name="age" value="2">
 			<label for="radio">Ні</label>
-	</form>
+
 	
-	<h4>Яка відстань (км) до місця доставки ?<h4>
-		<form id="delDist">
-		  <input type="text" name="distance">
-		</form>
+	<h4>Яка відстань (км) до місця доставки ? (За кожен додатковий км. понад 30 км буде стягнено оплату в розмірі 5 грн. за 1 км.)<h4>
+
+		<input type="text" name="distance">
 		
-	<h4>Загальна сума до оплати за товар :</h4>
-		<form id="totalResult">
-		  <input type="text" name="distance">
-		</form>
-	
 	</body>
 </html>
 
-<!-- <button>Обрахувати ціну покупки</button> -->
