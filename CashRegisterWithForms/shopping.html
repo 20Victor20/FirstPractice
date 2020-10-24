@@ -5,21 +5,27 @@
 	</head>
 	<body>
 	
-	<h4>При покупці на понад 1000 грн. вам буде надана скидка до 15%</h4>
-		<input type="text" name="price" placeholder="Введіть суму покупки">
-	
-	<h4>У разі придбання товара готівкою Ви матимете можливість скористатись безкоштовною доставкою на відстань до 30 км. Бажаєте скористатись даною послугою?</h4>
-
-		<input type="radio" name="age" value="1">
-			<label for="radio">Так</label>
-		<input type="radio" name="age" value="2">
-			<label for="radio">Ні</label>
-
-	
-	<h4>Яка відстань (км) до місця доставки ? (За кожен додатковий км. понад 30 км буде стягнено оплату в розмірі 5 грн. за 1 км.)<h4>
-
-		<input type="text" name="distance">
+	 <script	src="shopping.js" ></script>
 		
-	</body>
-</html>
+		<p><h4>При покупці на понад 1000 грн. вам буде надана скидка до 15%</h4>
+			<input type="text" name="price" placeholder="Введіть суму покупки" id="basePrice">
+			<input type="button" class="firstCount" value="Розрахувати"></p>
+		
+		<div id="show" style="display: none"><p><h4>У разі придбання товара готівкою Ви матимете можливість скористатись безкоштовною доставкою на відстань до 30 км. Бажаєте скористатись даною послугою?</h4>
+			<input type="radio" name="age" value="1">
+				<label for="radio">Так</label>
+			<input type="radio" name="age" value="2"></input>
+				<label for="radio">Ні</label></p>
+		
+			<p><h4>Яка відстань (км) до місця доставки? (За кожен додатковий км. понад 30 км. буде стагнено оплату в розмірі 5 грн. за 1 км.)</h4>
+			<input type="text" name="distance"></p>
+		</div>
+		
+		<button onclick="countEver()" class="total">Обрахувати ціну покупки</button>
 
+		<p>Загальна ціна покупки становить: <output name="result">0</output></p> 
+
+ </script>
+
+</body>
+</html>
