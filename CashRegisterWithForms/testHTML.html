@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 	<head>
-	<meta charset="utf-8">
+		<meta charset="utf-8">
 		<title>Settlement calculator</title>
+		<script type="text/javascript" src="testJS.js"></script>
 	</head>
 	<body>
-
-<script src="testJS.js"></script>
-
-	<p><h4>При покупці на понад 1000 грн. вам буде надана скидка до 15%</h4>
+	
+	<div>
+		<p><h4>При покупці на понад 1000 грн. вам буде надана скидка до 15%</h4>
 			<input type="text" name="price" placeholder="Введіть суму покупки" id="basePrice">
-			<button onclick="firstCount()" class="total">Розрахувати</button>
-	</p>
+			<button onclick="firstCount()"  class="total">Розрахувати</button></p>
+	</div>
 
-	<button onclick="secondCount()" id="withDiscPrice" >Підсумок</button>
+	<div id="showSection" style="display: none;">
+		<p><h4>У разі придбання товара готівкою Ви матимете можливість скористатись безкоштовною доставкою на відстань до 30 км. Бажаєте скористатись даною послугою?</h4>
+		<input type="radio" name="delivChoice" value="1" id="confirm" onclick="wantDelivery()">	
+			<label for="radio">Так</label>
+		<input type="radio" name="delivChoice" value="2" id="decline" onclick="dontWantDelivery()">
+			<label for="radio">Ні</label>
+		</p>
+		<p><h4>Яка відстань (км) до місця доставки? (За кожен додатковий км. понад 30 км. буде стагнено оплату в розмірі 5 грн. за 1 км.)</h4>
+			<input type="text" name="distance"  placeholder="Введіть відстань" id="dist" disabled="true" ></p>
+		<button onclick="secondCount()" id="withDiscPrice" >Підсумок</button>
+	</div>
+
+	<div>Загальна ціна покупки становить: <output name ="endResult" id="endPrice">0</output> грн.</div>
+
+	
 
 </body>
 </html>
