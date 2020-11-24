@@ -25,6 +25,9 @@ function secondCount() {
 				console.log ('Загальна сума до сплати за товар : ' + totalPrice + " грн.");
 			document.getElementById("endPrice").innerHTML = (totalPrice).toFixed(2);
 		}
+		else {
+			document.getElementById("endPrice").innerHTML= (discPrice).toFixed(2);
+		}
 }
 
 function wantDelivery() {
